@@ -1,0 +1,43 @@
+<!DOCTYPE >
+<html >
+
+<head>
+    <script language="Javascript">
+        MyBooks = new Array("book1.jpg","book2.jpg","book3.jpg");
+        book = 0
+        function ShowCover(book) 
+        {
+            document.DisplayBook.src = MyBooks[book];
+        }
+        </script>
+                <style>
+ 
+                    img
+                    {
+         
+                        width:250px;
+         
+                        height:250px;
+         
+                    }
+                </style>
+        
+</head>
+
+<body>
+
+    <body>
+        <P align="center"><img src="book2.jpg" name="DisplayBook" />
+        <p>
+            <center>
+                <table border=0>
+                    <tr>
+                        <td align=center><a onmouseover="ShowCover(0)"><b>HEy its book1</b></a><br>
+                            <a onmouseover="ShowCover(1)"><b>HEy its book2</b></a><br>
+                            <a onmouseover="ShowCover(2)"><b>HEy its book3</b></a><br>
+                        </td>
+                    </tr>
+                </table>
+    </body>
+
+</html>

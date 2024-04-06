@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table{
+            background-color: #E6E6FA;
+        }
+
+        button{
+            background-color: lightgreen;
+            color: black;
+            padding: 5px 10px;
+
+        }
+    </style>
+    <body>
+        <form>
+            <centre><h2>Create your account</h2></centre><br><br>
+            <table cellspacing = "25" align ="center" >
+                <tr>
+                    <td><b>Name</b> </td>
+                    <td>
+                        <input type="text" id="txt1">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Email-ID</b> </td>
+                    <td>
+                        <input type="text" id="txt2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Set Password</b> </td>
+                    <td>
+                        <input type="text" id="txt3">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>Confirm password</b> </td>
+                    <td>
+                        <input type="text" id="txt4">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button type="submit" onclick="createAccount()">Create</button></td>
+                    
+                </tr>
+            </table>
+            
+        </form>
+
+        <script>
+            function createAccount()
+            {
+                if(txt1.value=="" || txt2.value==""|| txt3.value==""||txt4.value=="")
+                {
+                    alert("enter all fields correctly");
+                }
+                else if(txt3.value != txt4.value)
+                {
+                    alert("password not matching");
+                }
+                else
+                {
+                    alert("Account created successfully");
+                }
+            }
+        </script>
+    </body>
+</html>

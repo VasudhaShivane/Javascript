@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            event
+        </title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+
+            function play()
+            {
+                var element = document.getElementById("select");
+                var str = element.options[element.selectedIndex].value;
+
+                alert("selected itme is : " +str );
+            }
+        
+            function display(ele)
+            {
+                ele.style.background = "orange";
+            }
+        
+            function dis(e)
+            {
+                e.style.background = "";
+            }
+            
+            
+        
+            </script>
+            
+            <form onsubmit="sub()">
+                <label>name </label> <input type="text"  onfocus="display(this)" onblur="dis(this)"required><br><br>
+                <label>class</label> <input type="text" onfocus="display(this)" onblur="dis(this)"required><br><br>
+                <label>subject</label>
+                
+                <select id ="select" onfocus="display(this)" onblur="dis(this)"required><br>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Biology">Biology</option>
+                </select>
+               
+        
+            </form>
+
+            <button onclick="play()"> show selected item</button><br><br>
+            
+            <div id ="test" style = "border:1px solid rgb(70, 53, 218) ; margin-top : 20px;" ></div>
+    </body>
+
+</html>

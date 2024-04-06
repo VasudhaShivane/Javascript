@@ -1,0 +1,68 @@
+<html>
+<head>
+            <title>Array </title>
+</head>
+<body>
+            <script language="Javascript" type="text/javascript">
+                     var car=new Array();
+                     car[0]='TATA'
+                     car[1]='FORD'
+                     car[2]='HYUNDAI'
+                     car[3]='BMW'
+                     car[4]='LABORGHINI'
+                     car[5]='HONDA'
+
+                      for (var i = 0; i < car.length; i++)
+                      {
+                          document.write(car[i] + '<br>')
+                       }
+
+                     car.sort();
+                     for (var i = 0; i < car.length; i++)
+                     {
+                         document.write(car[i] + '<br>');
+                     } 
+                     document.write('<br>');
+
+                     var str=car.concat();
+                     document.write(str);
+                     document.write('<br>');
+
+                     var str=car.join("*");
+                     document.write(str);
+
+                     var SlicingList= car.slice(2,3,5);
+                     for (var i = 0; i < SlicingList.length; i++)
+                     {
+                         document.write(SlicingList[i] + '<br>');
+                      }
+               
+                     var str1 = 'TATA,FORD,HYUNDAI,BMW,LAMBORGHINI,HONDA'
+                     var Spliting = str.split(',');
+                     document.write('<br>');
+                     document.write(str1);
+                     document.write('<br>');
+                     for (i=0; i<4; i++)
+                     {
+                        document.write(Spliting[i]);
+                        document.write('<br>');
+                      }   
+ 
+                      car.reverse();
+                      document.write(car[i]);
+
+                      car.push("TOYOTA");
+                      document.write(car[i]);
+
+                      car.pop();
+                      document.write(car[i]);
+
+                      car.shift();
+                      document.write(car[i]);
+
+              </script>
+              <noscript>
+                         <h1> JavaScript Required</h1>
+             </noscript>
+</body>
+</html>

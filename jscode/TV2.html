@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<title>Television channel program</title>
+</head>
+
+<body>
+	<script language="Javascript" type="text/javascript">
+		var ch = new Array();
+		ch[0] = 'Pogo'
+		ch[1] = 'Hungama'
+		ch[2] = 'Disney'
+		ch[3] = 'CartoonNetwork'
+		ch[4] = 'Nick'
+		ch[5] = 'SonyYaY'
+		ch[6] = 'Sonic'
+		ch[7] = 'DisneyXD'
+		ch[8] = 'MarvelHQ'
+		ch[9] = 'KidsTV'
+
+		function Television() 
+		{
+			var channel = prompt("Enter channel number between 101 to 110");
+
+			if (channel >= 101 && channel <= 110) 
+			{
+				alert("Channnel is Available");
+
+
+				switch (channel) 
+				{
+					case '101':
+						alert("you selected " + ch[0]);
+						break;
+
+					case '102':
+						alert("you selected " + ch[1]);
+						break;
+
+
+					case '103':
+						alert("you selected " + ch[2]);
+						break;
+
+
+					case '104':
+						alert("you selected " + ch[3]);
+						break;
+
+
+					case '105':
+						alert("you selected " + ch[4]);
+						break;
+
+
+					case '106':
+						alert("you selected " + ch[5]);
+						break;
+
+
+					case '107':
+						alert("you selected " + ch[6]);
+						break;
+
+
+					case '108':
+						alert("you selected " + ch[7]);
+						break;
+
+
+					case '109':
+						alert("you selected " + ch[8]);
+						break;
+
+
+					case '110':
+						alert("you selected " + ch[9]);
+						break;
+
+				}
+			}
+
+			else 
+			{
+				alert("Channel is not available");
+			}
+
+		}
+
+		Television();
+
+	</script>
+</body>
+
+</html>

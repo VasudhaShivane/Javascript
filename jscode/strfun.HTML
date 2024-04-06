@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<title>String Functions</title>
+</head>
+
+<body>
+	<script language="Javascript" type="text/javascript">
+
+		var string1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		document.write(string1 + '<br>')
+
+		document.write('The length of the string is :', string1.length + '<br>')
+
+		var string2 = "JAVASCRIPT"
+		document.write('The character at index 2 is : ', string2.charAt(2) + '<br>')
+
+		var string3 = 'JAVASCRIPT' + 'PROGRAMS'
+		document.write("String concatenation : ", string3 + '<br>')     /*s1.concat(s2)*/
+
+		var string4 = "Javascript can be used with HTML"
+		var index = string4.indexOf("be")
+		document.write("The string : ", string4 + '<br>')
+		document.write("The index of word be is : ", index + '<br>')
+
+		var string5 = "Please run programs"
+		var replace = string5.replace('programs', 'fast')
+		document.write("The original string is : ", string5 + '<br>')
+		document.write("The replaced string is : ", replace + '<br>')
+
+		var string6 = "Run Programs Quickly";
+		var slicing = string6.slice(3, 8);
+		document.write("The substring is : ", slicing + '<br>');
+
+		var string7 = "PROGRAMS"
+		var lower = string7.toLowerCase()
+		document.write("String in lowercase : ", lower + '<br>');
+
+		var string8 = "javascript"
+		var upper = string8.toUpperCase()
+		document.write("String in uppercase : ", upper + '<br>');
+
+		var string9 = "this is javascript"
+		var spliting = string9.split(" ")
+		document.write("Splited string : ", spliting + '<br>');
+
+		var string10 = "   ItIsScriptingLanguage    "
+		var trimming = string10.trim()
+		document.write("the trimmed string : ", trimming);
+
+	</script>
+</body>
+
+</html>

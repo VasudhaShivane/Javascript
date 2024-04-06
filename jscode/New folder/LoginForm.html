@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Creating a sample form </title>
+
+        !<style>
+            div{
+                background-color: #666683;
+            }
+            button{
+                background-color: rgb(192, 190, 79);
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>
+                Login Form
+            </h2>
+        </center><br><br>
+        <div>
+            <form name="frm1" align="center">
+                <label for="t1">Username</label>
+                <input type="text" name="t1" id="t1" placeholder="Enter your Email-id"><br><br>
+
+                <label for="t2">Password</label>
+                <input type="text" name="t2" id="t2" placeholder="Enter password"> <br><br>
+
+                <!--label for="gen">Gender </label><br>
+                <input type="radio" name ="r1" id="f" value = "female">
+                <-->
+
+
+                <button type="submit" onclick="loginButton()">login</button>
+                <button type="button" onclick="signinButton()" >Sign in </button>
+
+            </form>
+        </div>
+        <script>
+
+            function loginButton()
+            {
+                if(t1.value=="" || t2.value=="")
+                {
+                    alert("please enter all fields correctly");
+                }
+                else
+                {
+                    alert("loggied in successfully");
+                }
+            }
+
+            function signinButton()
+            {
+                window.location = "SignInForm.html"
+            }
+        </script>
+    </body>
+</html>

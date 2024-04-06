@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Arrays!!!</title>
+  <script type="text/javascript">
+    var newspapers = new Array("LOKMAT", "TIMES OF INDIA ", "MUMBAI CHAUFAIR", "SAKAL", "LOKSATTA");
+    Array.prototype.displayItems = function () 
+    {
+      for (i = 0; i < this.length; i++) 
+      {
+        document.write(this[i] + "<br />");
+      }
+    }
+    document.write("NEWSPAPERS :<br />");
+    newspapers.displayItems();
+    document.write("<br />The number of newspapers array is " + newspapers.length + "<br />");
+    document.write("<br />The SORTED newspapers array<br />");
+    newspapers.sort();
+    newspapers.displayItems();
+    document.write("<br />The REVERSED newspapers array<br />");
+    newspapers.reverse();
+    newspapers.displayItems();
+    document.write("<br />The newspapers array after REMOVING the LAST item<br />");
+    newspapers.pop();
+    newspapers.displayItems();
+    document.write("<br />THE newspapers array after PUSH<br />");
+    newspapers.push("JavaScript");
+    newspapers.displayItems();
+    document.write("<br />The newspapers array after SHIFT<br />");
+    newspapers.shift();
+    newspapers.displayItems();
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Move window
+        </title>
+    </head>
+    <body>
+        <h3>
+            <centre>
+                javascript program 
+                
+            </centre>
+        </h3>
+        <centre>
+            <button onclick="openWin()">Open window</button>
+            <button onclick="moveWin()"> move window</button>
+        </centre>
+        <script type="text/javascript">
+            var myWindow;
+
+            function openWin()
+            {
+                myWindow = window.open("","myWindow","width = 400 , height = 400");
+                myWindow.document.write("this is my window  ");
+            }
+
+            function moveWin()
+            {
+                myWindow.moveTo(500,100);
+                myWindow.focus();
+            }
+        </script>
+    </body>
+</html>

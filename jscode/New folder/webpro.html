@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        Hello
+    </title>
+</head>
+<script>
+    var navi = (navigator.appName == "naviname") ? 1 : 0;
+    if (navigator.appName == "naviname")
+    {
+        
+         document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+    }
+
+    
+    function mousehandler(e) 
+    {
+        var myevent = (navi) ? e : event;
+        var eventbutton = (navi) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+</script>
+
+<body>
+
+</body>
+
+</html>

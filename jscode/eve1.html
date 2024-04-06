@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            event
+        </title>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript">
+
+            function play()
+            {
+                document.write("hello");
+            }
+        
+            function display(ele)
+            {
+                ele.style.background = "orange";
+            }
+        
+            function dis(e)
+            {
+                e.style.background = "";
+            }
+            
+            function sub()
+            {
+                alert("submitted");
+            }
+        
+            </script>
+            <button onclick="play()"> click</button><br><br>
+            <form onsubmit="sub()">
+                <label>name </label> <input type="text"  onfocus="display(this)" onblur="dis(this)"required><br><br>
+                <label>class</label> <input type="text" onfocus="display(this)" onblur="dis(this)"required><br><br>
+                <label>country</label>
+                
+                <select onfocus="display(this)" onblur="dis(this)"required><br>
+                    <option value="india">india</option>
+                    <option value="US">US</option>
+                    <option value="UK">UK</option>
+                </select>
+                <input type="submit">
+        
+            </form>
+            
+            <div id ="test" style = "border:1px solid rgb(158, 80, 80) ; margin-top : 20px;" ></div>
+    </body>
+
+</html>
